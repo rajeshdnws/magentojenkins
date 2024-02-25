@@ -1,0 +1,31 @@
+{
+    "name": "abweb/module-sales-sequence",
+    "description": "Sales Sequences",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Rajesh",
+            "email": "rajeshdnw@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "magento/framework": "*",
+        "magento/module-sales-sequence": "100.4.*",
+        "magento/module-store": "101.1.*",
+        "php": ">=7.3.0"
+    },
+    "options": {
+      "symlink": true
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Abweb\\SalesSequence\\": ""
+        }
+    }
+}

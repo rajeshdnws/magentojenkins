@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <!-- Plugin for overriding the sales sequence -->
+    <type name="Magento\SalesSequence\Model\Meta">
+        <plugin name="Abweb_SalesCustomization::sales_sequence_change" type="Abweb\SalesSequence\Plugin\SalesSequence\Meta"/>
+    </type>
+
+    <preference for = "Magento\SalesSequence\Model\Builder" type = "Abweb\SalesSequence\Model\SalesSequence\Builder" />
+
+    <type name="Magento\Sales\Model\ResourceModel\Order\Invoice">
+        <plugin name="Abweb_SalesSequence_Zero_Dollar_Invoice_Sequence"
+                type="Abweb\SalesSequence\Plugin\SalesSequence\ZeroDollarInvoiceSequence"
+                disabled="false"
+                sortOrder="0"/>
+    </type>
+</config>

@@ -1,0 +1,10 @@
+{
+    "sequence_zero_dollar_invoice_1": {
+        "column": {
+            "sequence_value": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

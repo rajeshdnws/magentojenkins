@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <sales_sequence>
+            <zero_dollar_invoice>
+                <zz_invoice>1</zz_invoice>
+            </zero_dollar_invoice>
+        </sales_sequence>
+    </default>
+</config>

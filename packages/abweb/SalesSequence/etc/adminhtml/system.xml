@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>	
+    <tab id="abweb" translate="label" sortOrder="111">
+			<label>Abweb Extension</label>
+		</tab>
+        <section id="sales_sequence" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+            <label>Sales Sequence</label>
+            <tab>abweb</tab>
+            <resource>Abweb_SalesSequence::config</resource>
+            <group id="order" sortOrder="10" showInWebsite="1" showInStore="0" showInDefault="1" translate="label">
+                <label>Order</label>
+                <field id="enabled" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1"  canRestore="1">
+                    <label>Enable Shared Sequence</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment><![CDATA[If this is set to 'Yes', it will enable shared sequence across stores.]]></comment>
+                </field>
+                <field id="shared_store_id" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1"  canRestore="1">
+                    <label>Shared Store</label>
+                    <source_model>Magento\Config\Model\Config\Source\Store</source_model>
+                    <comment><![CDATA[Select the store that has to be used as base for sequence.]]></comment>
+                </field>
+            </group>
+            <group id="invoice" sortOrder="10" showInWebsite="1" showInStore="0" showInDefault="1" translate="label">
+                <label>Invoice</label>
+                <field id="enabled" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1"  canRestore="1">
+                    <label>Enable Shared Sequence</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment><![CDATA[If this is set to 'Yes', it will enable shared sequence across stores.]]></comment>
+                </field>
+                <field id="shared_store_id" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1"  canRestore="1">
+                    <label>Shared Store</label>
+                    <source_model>Magento\Config\Model\Config\Source\Store</source_model>
+                    <comment><![CDATA[Select the store that has to be used as base for sequence.]]></comment>
+                </field>
+            </group>
+            <group id="zero_dollar_invoice" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                <label>Zero Dollar Invoice</label>
+                <field id="enabled" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1"  canRestore="1">
+                    <label>Enable Shared Sequence</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment><![CDATA[If this is set to 'Yes', it will enable shared sequence across stores.]]></comment>
+                </field>
+                <field id="shared_store_id" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1"  canRestore="1">
+                    <label>Shared Store</label>
+                    <source_model>Magento\Config\Model\Config\Source\Store</source_model>
+                    <comment><![CDATA[Select the store that has to be used as base for sequence.]]></comment>
+                </field>
+                <field id="zz_invoice" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Invoice Start With ZZ</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment><![CDATA[If this is set to 'Yes', Then zero total invoice start with ZZ.]]></comment>
+                </field>
+            </group>
+            <group id="creditmemo" sortOrder="10" showInWebsite="1" showInStore="0" showInDefault="1" translate="label">
+                <label>CredmitMemo</label>
+                <field id="enabled" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1"  canRestore="1">
+                    <label>Enable Shared Sequence</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment><![CDATA[If this is set to 'Yes', it will enable shared sequence across stores.]]></comment>
+                </field>
+                <field id="shared_store_id" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1"  canRestore="1">
+                    <label>Shared Store</label>
+                    <source_model>Magento\Config\Model\Config\Source\Store</source_model>
+                    <comment><![CDATA[Select the store that has to be used as base for sequence.]]></comment>
+                </field>
+            </group>
+            <group id="shipment" sortOrder="10" showInWebsite="1" showInStore="0" showInDefault="1" translate="label">
+                <label>Shipment</label>
+                <field id="enabled" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1"  canRestore="1">
+                    <label>Enable Shared Sequence</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment><![CDATA[If this is set to 'Yes', it will enable shared sequence across stores.]]></comment>
+                </field>
+                <field id="shared_store_id" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1"  canRestore="1">
+                    <label>Shared Store</label>
+                    <source_model>Magento\Config\Model\Config\Source\Store</source_model>
+                    <comment><![CDATA[Select the store that has to be used as base for sequence.]]></comment>
+                </field>
+            </group>
+            <group id="rma_item" sortOrder="10" showInWebsite="1" showInStore="0" showInDefault="1" translate="label">
+                <label>RMA</label>
+                <field id="enabled" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1"  canRestore="1">
+                    <label>Enable Shared Sequence</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment><![CDATA[If this is set to 'Yes', it will enable shared sequence across stores.]]></comment>
+                </field>
+                <field id="shared_store_id" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1"  canRestore="1">
+                    <label>Shared Store</label>
+                    <source_model>Magento\Config\Model\Config\Source\Store</source_model>
+                    <comment><![CDATA[Select the store that has to be used as base for sequence.]]></comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

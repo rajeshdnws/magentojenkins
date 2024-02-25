@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="sequence_zero_dollar_invoice_1" resource="default" engine="innodb">
+        <column xsi:type="int" name="sequence_value" unsigned="false" nullable="false" identity="true"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="sequence_value"/>
+        </constraint>
+    </table>
+</schema>
